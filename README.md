@@ -19,7 +19,7 @@ $query->fetch();    //sadece üçüncü kaydı al
 
 Bunu teker teker yapmak yerine bir seferde çekebiliriz.
 ```php 
-$query->fetchAll();    //Tüm şak diye al
+$query->fetchAll();    //Tüm kayıtları şak diye al
 ```
 
 ## PDO MODları
