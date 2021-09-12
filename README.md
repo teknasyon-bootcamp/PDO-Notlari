@@ -6,7 +6,7 @@ PDO veritabanlarına bağlanmamıza yarayan bir **API**'dır. (Okunuşu : AyPiAy
 $pdo = new PDO('mysql:host;dbname=database_name','username','password');
 ```
 
-Tablodaki verilerin hepsini dizi olarak çekmek için bir veritabanı sorgusu yazalım. Sondaki kısmı ilerde açıklayacağız. Şu anlık orada sihir oluyor :mage_man: 
+Tablodaki verilerin hepsini dizi olarak çekmek için bir veritabanı sorgusu yazalım. Sondaki kısmı ilerde açıklayacağız. Şu anlık orada sihir oluyor :male_mage: 
 
 ```php 
 $query = $pdo->query('Select * from posts', PDO::FETCH_ASSOC);
@@ -27,9 +27,13 @@ $query->fetchAll();    //Tüm şak diye al
 Bu modlarla PDO'ya verilerin hangi yapıda alınacağını  belirtiyoruz. Şunlar temel 
 
 **FETCH_BOTH :** Varsayılandır. Kayıtları hem  sıfırdan başlayan bir index yapına hem de sütün adlarıyla oluşmuş bir index yapısına sahip dizi dönderir.
+
 **FETCH_ASSOC :** Kayıtları sütün adlarının index olduğu bir dizi olarak dönderir.
+
 **FETCH_OBJ :** Kayıtları değer verilmediği takdirde anonim sınıf nesnesi olarak dönderir.
+
 **FETCH_CLASS :** Kayıtları işaret edilen sınıfın nesnesi olarak dönderir.
+
 **FETCH_BOUND :** Veritabanındaki her sütünün verisini bir değişken olarak getir. (Genellikle bindColumn ile kullanılır. İleride örneği var.)
 
 
