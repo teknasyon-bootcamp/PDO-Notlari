@@ -6,7 +6,7 @@ PDO veritabanlarına bağlanmamıza yarayan bir **API**'dır. (Okunuşu : AyPiAy
 $pdo = new PDO('mysql:host;dbname=database_name','username','password');
 ```
 
-Tablodaki verilerin hepsini dizi olarak çekmek için bir veritabanı sorgusu yazalım. Sondaki kısmı ilerde açıklayacağız. Şu anlık orada sihir oluyor :mage: 
+Tablodaki verilerin hepsini dizi olarak çekmek için bir veritabanı sorgusu yazalım. Sondaki kısmı ileride açıklayacağız. Şu anlık orada sihir oluyor :mage: 
 
 ```php 
 $query = $pdo->query('Select * from posts', PDO::FETCH_ASSOC);
@@ -24,7 +24,7 @@ $query->fetchAll();    //Tüm kayıtları şak diye al
 
 ## PDO MODları
 
-Bu modlarla PDO'ya verilerin hangi yapıda alınacağını  belirtiyoruz. Şunlar temel 
+Bu modlarla PDO'ya verilerin hangi yapıda alınacağını  belirtiyoruz. Temel PDO modları şunlardır; 
 
 **FETCH_BOTH :** Varsayılandır. Kayıtları hem  sıfırdan başlayan bir index yapına hem de sütün adlarıyla oluşmuş bir index yapısına sahip dizi dönderir.
 
