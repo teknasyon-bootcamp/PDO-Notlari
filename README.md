@@ -6,7 +6,7 @@ PDO veritabanlarına bağlanmamıza yarayan bir **API**'dır. (Okunuşu : AyPiAy
 $pdo = new PDO('mysql:host;dbname=database_name','username','password');
 ```
 
-Tablodaki verilerin hepsini dizi olarak çekmek için bir veritabanı sorgusu yazalım. Sondaki kısmı ilerde açıklayacağız. Şu anlık orada sihir oluyor :male_mage: 
+Tablodaki verilerin hepsini dizi olarak çekmek için bir veritabanı sorgusu yazalım. Sondaki kısmı ilerde açıklayacağız. Şu anlık orada sihir oluyor :mage: 
 
 ```php 
 $query = $pdo->query('Select * from posts', PDO::FETCH_ASSOC);
